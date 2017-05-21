@@ -8,6 +8,7 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 role :testserver, "jenkins@54.245.63.109"
+set :copy_from, "/var/lib/jenkins/workspace/Build-Students/target/students-1.jar"
 
 # role-based syntax
 # ==================
