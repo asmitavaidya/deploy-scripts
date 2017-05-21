@@ -8,7 +8,7 @@ namespace :deploy_app do
 	task :start_students do
 		puts 'Starting students.....'
 		on roles(:testserver) do
-	      execute "java -jar students-1.jar"
+	      execute "nohup java -jar students-1.jar > /dev/null 2>&1 &"
 	    end		
 	end
 	
