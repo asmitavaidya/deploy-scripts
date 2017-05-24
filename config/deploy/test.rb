@@ -10,6 +10,7 @@
 role :testserver, "jenkins@54.245.63.109"
 set :copy_from, "/var/lib/jenkins/workspace/Build-Students/target/students-1.jar"
 set :test_server, "jenkins@54.245.63.109"
+set :copy_ui_from, "/var/lib/jenkins/workspace/Build-UI-Students/target/demo-0.0.1-SNAPSHOT.jar"
 
 # role-based syntax
 # ==================
